@@ -1,0 +1,33 @@
+mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 64px;
+}
+a {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    }
+span {
+    margin-left: 24px;
+
+}
+.centrinho {
+    position: relative;
+    height: 95%;
+    background: #ebebeb ;
+    background-image: url("imagem.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-top: 5px solid black;
+}
+.centro{
+    width: 70%;
+    height: 100px;
+    position: absolute;
+    border: 3px solid #73AD21;
+    margin: auto;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+}

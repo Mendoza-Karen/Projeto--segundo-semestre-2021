@@ -1,0 +1,30 @@
+.example-card{
+    position: absolute;
+    max-width: 400px;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto; 
+    width: 30%;
+    height: 700px;
+    border:1px solid black
+}
+.example-margin{
+    display: block;
+    font-size: 20px;
+    margin-left: 15%;
+}
+.example-title{
+    font-size: 30px;
+    margin-bottom: 15%;
+    margin-left: 20%;
+    
+}
+mat-form-field{
+    margin-left: 21%;
+}
+body{
+    background-color: rgba(255, 123, 0, 0.931);
+    border-top: 3px solid black;
+}
