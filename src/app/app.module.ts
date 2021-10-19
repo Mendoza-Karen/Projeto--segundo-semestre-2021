@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,6 +28,10 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTableModule } from '@angular/material/table';
+import { NavsComponent } from './navs/navs.component';
+import { ListaSignupComponent } from './lista-signup/lista-signup.component';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { ClienteService } from './cliente.service';
 
 @NgModule({
   declarations: [
@@ -37,7 +42,11 @@ import { MatTableModule } from '@angular/material/table';
     LoginComponent,
     QuestComponent,
     SignupComponent,
-    RootNavComponent
+    RootNavComponent,
+    NavsComponent,
+    ListaSignupComponent,
+ 
+  
   ],
   imports: [
     BrowserModule,
@@ -56,9 +65,12 @@ import { MatTableModule } from '@angular/material/table';
     MatCheckboxModule,
     MatRadioModule,
     MatSelectModule,
-    MatTableModule
+    MatTableModule,
+    MatExpansionModule,
+    HttpClientModule,
+  
   ],
-  providers: [],
+  providers: [ClienteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,19 +1,23 @@
-body{
-    background-color: rgba(255, 123, 0, 0.931);
-    position: relative;
-}
-.example-card{
+mat-card {
     position: absolute;
     max-width: 390px;
     bottom: 0;
     top: 0;
     right: 0;
-    left: 0;
+    left: 50%;
     margin: auto; 
     width: 70%;
     height: 34%;
     border: 1px solid black;
+
 }
+
+mat-form-field,
+    input {
+    width: 100%;
+    }
+
+
 .example-form-field {
     width: 350px;
   }

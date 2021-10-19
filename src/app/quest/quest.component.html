@@ -3,40 +3,12 @@
 </mat-toolbar>
 <body>
   <mat-card class="example-card">
-    <mat-card-title>Pergunta 1</mat-card-title>
-    <mat-card-actions align="end">
+    <mat-card-title> Pergunta:{{perguntaAtual.texto}}</mat-card-title>
+    <mat-card-actions >
       <button mat-button>Sim</button>
       <button mat-button>Não</button>
-    </mat-card-actions>
-    <mat-card-title>Pergunta 2</mat-card-title>
-    <mat-card-actions align="end">
-      <button mat-button>Sim</button>
-      <button mat-button>Não</button>
-    </mat-card-actions>
-    <mat-card-title>Pergunta 3</mat-card-title>
-    <mat-card-actions align="end">
-      <button mat-button>Sim</button>
-      <button mat-button>Não</button>
-    </mat-card-actions>
-    <mat-card-title>Pergunta 4</mat-card-title>
-    <mat-card-actions align="end">
-      <button mat-button>Sim</button>
-      <button mat-button>Não</button>
-    </mat-card-actions>
-    <mat-card-title>Pergunta 5</mat-card-title>
-    <mat-card-actions align="end">
-      <button mat-button>Sim</button>
-      <button mat-button>Não</button>
-    </mat-card-actions>
-    <mat-card-title>Pergunta 6</mat-card-title>
-    <mat-card-actions align="end">
-      <button mat-button>Sim</button>
-      <button mat-button>Não</button>
-    </mat-card-actions>
-    <mat-card-title>Pergunta 7</mat-card-title>
-    <mat-card-actions align="end">
-      <button mat-button>Sim</button>
-      <button mat-button>Não</button>
+      <button mat-button (click)="proximo()"> Próxima </button>
+      <button mat-button (click)="anterior()">voltar</button>
     </mat-card-actions>
   </mat-card>
 </body>

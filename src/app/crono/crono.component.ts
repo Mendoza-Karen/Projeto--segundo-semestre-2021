@@ -21,7 +21,7 @@ const ELEMENT_DATA: Cronograma[] = [
   templateUrl: './crono.component.html',
   styleUrls: ['./crono.component.css']
 })
-export class CronoComponent {
+export class CronoComponent implements OnInit {
   displayedColumns: string[] = ['dia', 'horario', 'atividade', 'profi','link'];
   dataSource = ELEMENT_DATA;
   

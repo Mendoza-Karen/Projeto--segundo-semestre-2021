@@ -1,14 +1,15 @@
 .example-card{
     position: absolute;
-    max-width: 50%;
+    max-width: 70%;
     bottom: 0;
     top: 0;
     right: 0;
     left: 0;
     margin: auto; 
-    width: 50%;
-    height: 770px;
+    width: 600px;
+    height: 145px;
     border:1px solid black
+
 }
 body{
     

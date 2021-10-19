@@ -8,6 +8,8 @@ import { NavComponent } from './nav/nav.component';
 import { QuestComponent } from './quest/quest.component';
 import { RootNavComponent } from './root-nav/root-nav.component';
 import { SignupComponent } from './signup/signup.component';
+import { NavsComponent } from './navs/navs.component';
+import { ListaSignupComponent } from './lista-signup/lista-signup.component';
 
 const routes: Routes = [
     {path: "", component:NavComponent},
@@ -16,7 +18,9 @@ const routes: Routes = [
     {path: "root-nav", component:RootNavComponent},
     {path: "quest", component:QuestComponent},
     {path: "dispo", component:DispoComponent},
-    {path: "crono", component:CronoComponent}
+    {path: "crono", component:CronoComponent},
+    {path: "navs", component:NavsComponent},
+    {path: "lista", component:ListaSignupComponent}
 
 ];
 
