@@ -1,13 +1,14 @@
 import { Injectable } from "@angular/core";
 import { Cliente } from "./cliente.model";
 import { Subject } from 'rxjs';
-import { map } from 'rxjs/operators';
 import { HttpClient } from "@angular/common/http";
+import { Resposta } from "./cliente.model";
 
 @Injectable({ providedIn:'root'})
 export class ClienteService{
     private clientes: Cliente[]=[];
     private listaClientesAtualizada = new Subject<Cliente[]>();
+    private respostas: Resposta[]=[];
 
     getClientes(): void {
         this.httpClient.get <{mensagem: string, clientes:
@@ -37,6 +38,12 @@ export class ClienteService{
     }
 
     constructor( private httpClient: HttpClient) {
+    }
 
-     }
+    salvarResposta(idPergunta: number , resposta:boolean){
+        const respostas: Resposta ={
+            idPergunta: idPergunta,
+            resposta: resposta
+        }
+    }
 }

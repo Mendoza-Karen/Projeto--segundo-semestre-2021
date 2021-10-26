@@ -3,4 +3,7 @@ export interface Cliente {
     senha: string;
     email: string;
     }
-    
+export interface Resposta {
+    idPergunta: number;
+    resposta: boolean;
+}    

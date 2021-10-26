@@ -3,16 +3,15 @@ export interface Cronograma {
   dia: string;
   horario: string;
   atividade: string;
-  profi: string;
   link: string;
 }
 
 const ELEMENT_DATA: Cronograma[] = [
-  {dia: 'segunda', horario: '', atividade: '', profi: '', link:''},
-  {dia: 'terça', horario: '', atividade: '', profi: '', link:''},
-  {dia: 'quarta', horario: '', atividade: '', profi: '', link:''},
-  {dia: 'quinta', horario: '', atividade: '', profi: '', link:''},
-  {dia: 'sexta', horario: '', atividade: '', profi: '', link:''}
+  {dia: 'segunda', horario: '', atividade: '', link:''},
+  {dia: 'terça', horario: '', atividade: '', link:''},
+  {dia: 'quarta', horario: '', atividade: '', link:''},
+  {dia: 'quinta', horario: '', atividade: '', link:''},
+  {dia: 'sexta', horario: '', atividade: '', link:''}
 ]
 
 
@@ -22,7 +21,7 @@ const ELEMENT_DATA: Cronograma[] = [
   styleUrls: ['./crono.component.css']
 })
 export class CronoComponent implements OnInit {
-  displayedColumns: string[] = ['dia', 'horario', 'atividade', 'profi','link'];
+  displayedColumns: string[] = ['dia', 'horario', 'atividade','link'];
   dataSource = ELEMENT_DATA;
   
 

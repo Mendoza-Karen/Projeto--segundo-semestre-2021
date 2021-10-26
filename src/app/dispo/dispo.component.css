@@ -1,13 +1,13 @@
 .example-card{
     position: absolute;
-    max-width: 400px;
-    bottom: 0;
+    max-width: 700px;
+    bottom: 70%;
     top: 0;
     right: 0;
     left: 0;
     margin: auto; 
-    width: 30%;
-    height: 700px;
+    width: 500px;
+    height: 150px;
     border:1px solid black
 }
 .example-margin{

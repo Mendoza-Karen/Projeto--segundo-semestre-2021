@@ -6,7 +6,7 @@ const mongoose= require('mongoose');
 const Cliente = require ('./models/cliente');
 app.use(bodyParser.json());
 app.use(cors());
-
+const Resposta = require('./models/resposta');
 
 mongoose.connect(`mongodb+srv://karen:niconico123@cluster0.qbt0c.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`)
 .then(() => {
@@ -29,6 +29,29 @@ const clientes = [
     email: 'jaqueline@email.com'
     }
 ]
+const respostas =[
+{
+  idPergunta:1,
+  resposta:'false'
+},
+{
+  idPergunta:2,
+  resposta:'false'
+},
+{
+  idPergunta:3,
+  resposta:'false'
+},
+{
+  idPergunta:4,
+  resposta:'false'
+},
+{
+  idPergunta:5,
+  resposta:'false'
+}
+]
+
 app.use ((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', "*");
     res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type,Accept');

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ClienteService } from '../cliente.service';
 @Component({
   selector: 'app-quest',
   templateUrl: './quest.component.html',
@@ -10,15 +10,21 @@ export class QuestComponent implements OnInit {
   { texto:' Você é possui ansiedade socialmente?'}, 
   { texto:' Você é diagnosticado com depressão?'},
   { texto:' Você é diagnosticado com ansiedade?'},
-  { texto:' Você é diagnoticado com Transtorno do déficit de atenção com hiperatividade(TDAH)?'},
+  { texto:' Você é diagnoticado com Transtorno de déficit de atenção com hiperatividade(TDAH)?'},
   { texto:' Você se sente infeliz?'}
+  ] 
+  respostas = [
+  {idPergunta:null ,resposta:false},
+  {idPergunta:null ,resposta:false},
+  {idPergunta:null ,resposta:false},
+  {idPergunta:null ,resposta:false},
+  {idPergunta:null ,resposta:false}
   ]
- respostas=[false,false,false,false,false]
   respostaS(){
-    this.respostas[this.indice]=true
+    this.respostas[this.indice]= {idPergunta:this.indice, resposta:true}
   }
   respostaN(){
-    this.respostas[this.indice]=false
+    this.respostas[this.indice]={idPergunta:this.indice, resposta:false}
   }
 
   indice = 0
@@ -41,9 +47,13 @@ export class QuestComponent implements OnInit {
       this.perguntaAtual=this.perguntas[this.indice]
     }
   }
+  onSalvarResposta(){
+    for(let i=0; i<5; i++){
+      this.clienteService.salvarResposta ( i ,this.respostas[i][i])
+    }
+  }
 
-
-  constructor() { }
+  constructor(public clienteService: ClienteService) { }
 
   ngOnInit(): void {
   }

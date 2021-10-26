@@ -1,14 +1,15 @@
 <mat-toolbar color="primary">
     Questionário
-</mat-toolbar>
+</mat-toolbar> 
 <body>
   <mat-card class="example-card">
     <mat-card-title> Pergunta:{{perguntaAtual.texto}}</mat-card-title>
     <mat-card-actions >
-      <button mat-button>Sim</button>
-      <button mat-button>Não</button>
+      <button mat-button (click)="respostaS">Sim</button>
+      <button mat-button (click)="respostaN">Não</button>
       <button mat-button (click)="proximo()"> Próxima </button>
-      <button mat-button (click)="anterior()">voltar</button>
+      <button mat-button (click)="anterior()"> Voltar </button>
+      <button mat-button (click)="onSalvarResposta()"> Salvar</button>
     </mat-card-actions>
   </mat-card>
 </body>

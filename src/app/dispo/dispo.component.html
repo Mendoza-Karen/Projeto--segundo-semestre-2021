@@ -1,59 +1,17 @@
 <mat-toolbar color="primary">
-    Disponibilidade
+    Disponibilidade 
 </mat-toolbar>
 <body>
     
     <mat-card class="example-card">
-        <mat-card-title class="example-title">Dias da semana</mat-card-title>
-    
-        <mat-checkbox class="example-margin">Segunda</mat-checkbox>
-    
-        <mat-form-field appearance="fill">
-        <mat-label>Horário</mat-label>
-        <select matNativeControl required>
-          <option value="horario1">08H ás 10H</option>
-          <option value="horario2">14H ás 16H</option>
-        </select>
-        </mat-form-field>
-    
-        <mat-checkbox class="example-margin">Terça</mat-checkbox>
-    
-        <mat-form-field appearance="fill">
-        <mat-label>Horário</mat-label>
-        <select matNativeControl required>
-          <option value="horario1">08H ás 10H</option>
-          <option value="horario2">14H ás 16H</option>
-        </select>
-        </mat-form-field>
-    
-        <mat-checkbox class="example-margin">Quarta</mat-checkbox>
-    
-        <mat-form-field appearance="fill">
-        <mat-label>Horário</mat-label>
-        <select matNativeControl required>
-          <option value="horario1">08H ás 10H</option>
-          <option value="horario2">14H ás 16H</option>
-        </select>
-        </mat-form-field>
-    
-        <mat-checkbox class="example-margin">Quinta</mat-checkbox>
-    
-        <mat-form-field appearance="fill">
-        <mat-label>Horário</mat-label>
-        <select matNativeControl required>
-          <option value="horario1">08H ás 10H</option>
-          <option value="horario2">14H ás 16H</option>
-        </select>
-        </mat-form-field>
-    
-        <mat-checkbox class="example-margin">Sexta</mat-checkbox>
-    
-        <mat-form-field appearance="fill">
-        <mat-label>Horário</mat-label>
-        <select matNativeControl required>
-          <option value="horario1">08H ás 10H</option>
-          <option value="horario2">14H ás 16H</option>
-        </select>
-        </mat-form-field>
+        <mat-card-title>Dia da semana: {{diaAtual.texto}}</mat-card-title>
+        <mat-card-actions >
+          <button mat-button (click)="respostaS">8H ás 10H</button>
+          <a>  ou</a>
+          <button mat-button (click)="respostaN">14H ás 16H</button>
+          <button mat-button (click)="proximo()"> Próxima </button>
+          <button mat-button (click)="anterior()"> Voltar </button>
+          <button mat-button (click)="onSalvarResposta()">Salvar</button>
+        </mat-card-actions>
     </mat-card>
 </body>
