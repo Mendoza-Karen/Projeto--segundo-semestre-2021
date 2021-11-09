@@ -4,29 +4,22 @@
 <body>
   
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-   
-      <!-- Dia Column -->
+     
       <ng-container matColumnDef="dia">
         <th mat-header-cell *matHeaderCellDef> Dia </th>
         <td mat-cell *matCellDef="let element"> {{element.dia}} </td>
       </ng-container>
-    
-      <!-- Horário Column -->
+     
       <ng-container matColumnDef="horario">
         <th mat-header-cell *matHeaderCellDef> Horário </th>
         <td mat-cell *matCellDef="let element"> {{element.horario}} </td>
       </ng-container>
-    
-      <!-- Atividade Column -->
+   
       <ng-container matColumnDef="atividade">
         <th mat-header-cell *matHeaderCellDef> Atividade </th>
         <td mat-cell *matCellDef="let element"> {{element.atividade}} </td>
       </ng-container>
     
-      <!-- Profissional Column -->
-  
-  
-      <!--Link Column-->
       <ng-container matColumnDef="link">
         <th mat-header-cell *matHeaderCellDef> Link </th>
         <td mat-cell *matCellDef="let element"> {{element.link}} </td>
@@ -34,5 +27,7 @@
     
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
     </table>
+    <button mat-button (click)="listarDados()">Listar</button>
 </body>

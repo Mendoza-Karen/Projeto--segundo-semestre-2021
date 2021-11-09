@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ClienteService } from '../cliente.service';
+import { ClienteService } from '../cliente.service'; 
 
 @Component({
   selector: 'app-dispo',
@@ -51,9 +51,7 @@ proximo(){
   }
 }
 onSalvarResposta(){
-  for(let i=0; i<5; i++){
-    this.clienteService.salvarResposta ( i ,this.respostas[i][i])
-  }
+  this.clienteService.salvarHorario ( this.indice ,this.respostas[this.indice].resposta)
 }
 
   constructor(public clienteService: ClienteService) { }

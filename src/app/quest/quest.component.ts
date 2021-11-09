@@ -48,14 +48,12 @@ export class QuestComponent implements OnInit {
     }
   }
   onSalvarResposta(){
-    for(let i=0; i<5; i++){
-      this.clienteService.salvarResposta ( i ,this.respostas[i][i])
-    }
+      this.clienteService.salvarResposta ( this.indice ,this.respostas[this.indice].resposta)
   }
 
   constructor(public clienteService: ClienteService) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { 
   }
 
 }

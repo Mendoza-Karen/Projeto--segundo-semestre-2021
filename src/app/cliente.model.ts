@@ -6,4 +6,8 @@ export interface Cliente {
 export interface Resposta {
     idPergunta: number;
     resposta: boolean;
-}    
+}     
+export interface Horario {
+    idPergunta: number;
+    resposta: boolean;
+}
