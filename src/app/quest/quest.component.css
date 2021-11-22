@@ -1,19 +1,65 @@
 .example-card{
     position: absolute;
     max-width: 70%;
-    bottom: 70%;
+    bottom: 60%;
     top: 0;
     right: 0;
     left: 0;
     margin: auto; 
-    width: 600px;
-    height: 145px;
+    width: 750px;
+    height: 160px;
     border:1px solid black
-
+}
+.card{
+    position: absolute;
+    max-width: 700px;
+    bottom: 20%;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto; 
+    width: 640px;
+    height: 220px;
+    border:1px solid black;
+    padding: 0%;
+}
+.aviso{
+    position: absolute;
+    bottom: 83%;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto; 
+    width: 440px;
+    height: 35px;
+    border:1px solid black;  
+    padding: 0%;
+}
+.aviso2{
+    font-size: 110%;
+    color: rgba(245, 103, 9, 0.938);
+}
+.azulejo{
+    font-size: 120%;
+    color: rgba(245, 103, 9, 0.938);
+}
+p{
+    font-size: 90%;
 }
 body{
     
-    background-color: rgba(255, 123, 0, 0.931);
+    background-image: url("quest.jpeg");
+    background-size: 100% 100%;
     position: relative;
     border-top: 2px solid black;
+}
+div{
+    margin-top: 1rem;
+    margin-left: auto;
+    left :50%;
+    display: inline-block;
+    position: relative;
+    text-align: end;
+   
+    
 }

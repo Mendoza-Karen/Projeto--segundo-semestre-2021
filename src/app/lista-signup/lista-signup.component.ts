@@ -15,6 +15,10 @@ export class ListaSignupComponent implements OnInit, OnDestroy {
     
   constructor(public clienteService: ClienteService) {}
 
+  onDelete (id: string): void{
+    this.clienteService.removerCliente(id);
+    }
+    
   ngOnInit(): void {
   this.clienteService.getClientes(); 
   this.clientesSubscription = this.clienteService

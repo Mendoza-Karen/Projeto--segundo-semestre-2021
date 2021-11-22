@@ -16,10 +16,17 @@
   z-index: 1;
 }
 .bemvindo {
-  margin: 15px;
+  margin: 20px;
+  height: 230px;
+  
+  border: blueviolet;
 }
 
 mat-sidenav-content{
-    background-color: rgba(255, 123, 0, 0.931);
-    position: relative;
+  background-image: url("imagee.jpeg");
+  background-size: 100% 100%;
+  position: relative;
+}
+mat-card-title{
+  font-size: 320%;
 }

@@ -2,14 +2,30 @@
     Questionário
 </mat-toolbar> 
 <body>
+  <mat-card class="aviso">
+    <mat-card-title class="aviso2">Após selecionar a resposta você deve clicar em Salvar</mat-card-title>
+  </mat-card>
+  <mat-card class="card">
+    <mat-card-title class="azulejo">Obs: Leve em conta que cada dia da semana é destinado para um grupo.</mat-card-title>
+    <br>
+    <p>1. Segunda-feira: Grupo para diagnosticados com ansiedade.</p>
+    <p>2. Terça-feira: Grupo para pessoas diagnosticados com depressão.</p>
+    <p>3. Quarta-feira: Grupo para pessoas diagnosticados com borderline.</p>
+    <p>4. Quinta-feira: Grupo para pessoas diagnosticados com bipolaridade.</p>
+    <p>5. Sexta-feira: Grupo geral.</p>
+  </mat-card>
   <mat-card class="example-card">
-    <mat-card-title> Pergunta:{{perguntaAtual.texto}}</mat-card-title>
+    <mat-card-title> {{perguntaAtual.texto}}</mat-card-title>
     <mat-card-actions >
-      <button mat-button (click)="respostaS()">Sim</button>
-      <button mat-button (click)="respostaN()">Não</button>
+      <button mat-button class="border border-dark" (click)="respostaS()">Sim</button>
+      <a> ou</a>
+      <button mat-button class="border border-dark" (click)="respostaN()">Não</button>
       <button mat-button (click)="proximo()"> Próxima </button>
       <button mat-button (click)="anterior()"> Voltar </button>
-      <button mat-button (click)="onSalvarResposta()"> Salvar</button>
+      <button mat-button mat-raised-button color="primary" (click)="onSalvarResposta()"> Salvar</button>
     </mat-card-actions>
   </mat-card> 
+<div>
+    <button mat-button mat-raised-button color="primary" routerLink="/root-nav">Voltar</button>
+</div>
 </body>

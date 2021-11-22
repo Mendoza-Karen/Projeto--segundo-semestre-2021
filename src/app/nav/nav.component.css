@@ -15,19 +15,49 @@ span {
     position: relative;
     height: 95%;
     background: #ebebeb ;
-    background-image: url("imagem.jpg");
+    background-image: url("imagemm.jpeg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-top: 5px solid black;
 }
 .centro{
     width: 70%;
-    height: 100px;
+    height: 50px;
     position: absolute;
-    border: 3px solid #73AD21;
     margin: auto;
-    bottom: 0;
+    bottom: 70%;
     top: 0;
     right: 0;
     left: 0;
+    font-size: 165%;
+    color:#ebebeb;
+    text-align:center;
+}
+.sub{
+    width: 60%;
+    height: 50px;
+    position: absolute;
+    
+    margin: auto;
+    bottom: 62%;
+    top: 0;
+    right: 0;
+    left: 0;
+    font-size: 120%;
+    color: #ebebeb;
+    text-align: center;
+}
+.subs{
+    width: 60%;
+    height: 50px;
+    position: absolute;
+    
+    margin: auto;
+    bottom: 57%;
+    top: 0;
+    right: 0;
+    left: 0;
+    font-size: 120%;
+    color: #ebebeb;
+    text-align: center;
 }

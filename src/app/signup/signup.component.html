@@ -2,15 +2,15 @@
     <mat-card-title class="cadastro-box-header">Cadastro</mat-card-title>
     <form (submit)="onAdicionarCliente(clienteForm) "#clienteForm="ngForm">
     <mat-form-field>
-    <input required minlength="4" type="text" matInput placeholder="nome" name="nome" ngModel #nome="ngModel"/>
+    <input required minlength="4" type="text" matInput placeholder="nome" name="nome" [ngModel]="cliente?.nome" #nome="ngModel"/>
     <mat-error *ngIf="nome.invalid">Digite um nome válido</mat-error>
     </mat-form-field>
     <mat-form-field>
-    <input required type="text" matInput placeholder="senha" name="senha" ngModel #senha="ngModel"/>
+    <input required type="text" matInput placeholder="senha" name="senha" [ngModel]="cliente?.senha" #senha="ngModel"/>
     <mat-error *ngIf="senha.invalid">Digite uma senha válida</mat-error>
     </mat-form-field>
     <mat-form-field>
-    <input required type="text" matInput placeholder="email" name="email" ngModel #email="ngModel" />
+    <input required type="text" matInput placeholder="email" name="email" [ngModel]="cliente?.email" #email="ngModel" />
     <mat-error *ngIf="email.invalid">Digite um nome válido</mat-error>
     </mat-form-field>
     <button color="primary" mat-raised-button>

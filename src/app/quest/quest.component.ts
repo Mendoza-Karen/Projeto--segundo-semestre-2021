@@ -7,11 +7,11 @@ import { ClienteService } from '../cliente.service';
 })
 export class QuestComponent implements OnInit {
   perguntas = [
-  { texto:' Você é possui ansiedade socialmente?'}, 
-  { texto:' Você é diagnosticado com depressão?'},
-  { texto:' Você é diagnosticado com ansiedade?'},
-  { texto:' Você é diagnoticado com Transtorno de déficit de atenção com hiperatividade(TDAH)?'},
-  { texto:' Você se sente infeliz?'}
+  { texto:' 1ª Pergunta: Você é diagnosticado com ansiedade?'}, 
+  { texto:' 2ª Pergunta: Você é diagnosticado com depressão?'},
+  { texto:' 3ª Pergunta: Você é diagnosticado com a síndrome de borderline?'},
+  { texto:' 4ª Pergunta: Você é diagnosticado com bipolaridade?'},
+  { texto:' 5ª Pergunta: Você não é diagnosticado com nenhuma das anteriores mas está constantemente ansioso(a) ou estressado(a)?'}
   ] 
   respostas = [
   {idPergunta:null ,resposta:false},

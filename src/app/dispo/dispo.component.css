@@ -1,16 +1,44 @@
 .example-card{
     position: absolute;
     max-width: 700px;
-    bottom: 70%;
+    bottom: 50%;
     top: 0;
     right: 0;
     left: 0;
     margin: auto; 
-    width: 500px;
-    height: 150px;
+    width: 560px;
+    height: 130px;
     border:1px solid black
 }
-.example-margin{
+.aviso{
+    position: absolute;
+    bottom: 69%;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto; 
+    width: 480px;
+    height: 40px;
+    border:1px solid black;  
+    padding: 0%;
+}
+.aviso2{
+    font-size: 120%;
+    color: rgba(245, 103, 9, 0.938);;
+}
+.card{
+    position: absolute;
+    bottom: 30%;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto; 
+    width: 740px;
+    height: 57px;
+    border:1px solid black;
+    padding: 0%;
+}
+.example-margin{ 
     display: block;
     font-size: 20px;
     margin-left: 15%;
@@ -25,6 +53,19 @@ mat-form-field{
     margin-left: 21%;
 }
 body{
-    background-color: rgba(255, 123, 0, 0.931);
+    background-image: url("dispo.jpeg");
+    background-size: 100% 100%;
     border-top: 3px solid black;
+}
+div{
+    margin-top: 1rem;
+    margin-left: auto;
+    left :50%;
+    display: inline-block;
+    position: relative;
+    text-align: end;   
+}
+.obs{
+    font-size: 105%;
+    color: rgba(245, 103, 9, 0.938);
 }

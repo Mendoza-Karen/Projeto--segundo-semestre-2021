@@ -2,4 +2,12 @@
     margin-top: 1rem;
     display: block;
     }
-    
+button{
+    margin-left: auto;
+    left :50%;
+    display: inline-block;
+    position: relative;
+    text-align: end;
+    border: 1px solid black;
+}
+

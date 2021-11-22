@@ -2,16 +2,24 @@
     Disponibilidade 
 </mat-toolbar>
 <body>
-    
+    <mat-card class="aviso">
+        <mat-card-title class="aviso2">Após selecionar a resposta você deve clicar em Salvar</mat-card-title>
+    </mat-card>
+    <mat-card class="card">
+        <mat-card-title class="obs" >OBS: Caso não tenha disponibilidade em algum dia da semana apenas escolha qualquer horário e salve, no final será considerado apenas os grupos que você selecionou no questionário.</mat-card-title>
+    </mat-card>
     <mat-card class="example-card">
-        <mat-card-title>Dia da semana: {{diaAtual.texto}}</mat-card-title>
+        <mat-card-title>Dia da semana: {{diaAtual.texto}}.</mat-card-title>
         <mat-card-actions >
-          <button mat-button (click)="respostaS()">8H ás 10H</button>
+          <button mat-button mat-raised-button color="accent" (click)="respostaS()">8H ás 10H</button>
           <a>  ou</a>
-          <button mat-button (click)="respostaN()">14H ás 16H</button>
+          <button mat-button mat-raised-button color="accent" (click)="respostaN()">14H ás 16H</button>
           <button mat-button (click)="proximo()"> Próxima </button>
           <button mat-button (click)="anterior()"> Voltar </button>
-          <button mat-button (click)="onSalvarResposta()">Salvar</button>
+          <button mat-button mat-raised-button color="primary" (click)="onSalvarResposta()">Salvar</button>
         </mat-card-actions>
     </mat-card>
+    <div>
+        <button mat-button mat-raised-button color="primary" routerLink="/root-nav">Voltar</button>
+    </div>
 </body>

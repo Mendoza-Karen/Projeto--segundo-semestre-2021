@@ -20,8 +20,9 @@ const routes: Routes = [
     {path: "dispo", component:DispoComponent},
     {path: "crono", component:CronoComponent},
     {path: "navs", component:NavsComponent},
-    {path: "lista", component:ListaSignupComponent}
+    {path: "lista", component:ListaSignupComponent},
 
+    {path: 'editar/:idCliente', component:SignupComponent}
 ];
 
 @NgModule({

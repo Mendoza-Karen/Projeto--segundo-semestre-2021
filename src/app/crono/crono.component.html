@@ -29,5 +29,8 @@
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 
     </table>
-    <button mat-button (click)="listarDados()">Listar</button>
+    <div>
+      <button mat-button mat-raised-button color="accent" (click)="listarDados()">Listar</button>
+      <button mat-button mat-raised-button color="primary" routerLink="/root-nav">Voltar</button>
+    </div>
 </body>
