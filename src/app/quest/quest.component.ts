@@ -11,7 +11,7 @@ export class QuestComponent implements OnInit {
   { texto:' 2ª Pergunta: Você é diagnosticado com depressão?'},
   { texto:' 3ª Pergunta: Você é diagnosticado com a síndrome de borderline?'},
   { texto:' 4ª Pergunta: Você é diagnosticado com bipolaridade?'},
-  { texto:' 5ª Pergunta: Você não é diagnosticado com nenhuma das anteriores mas está constantemente ansioso(a) ou estressado(a)?'}
+  { texto:' 5ª Pergunta: Você não é diagnosticado com nenhuma das anteriores ou não deve disponibilidade para os anteriores?'}
   ] 
   respostas = [
   {idPergunta:null ,resposta:false},

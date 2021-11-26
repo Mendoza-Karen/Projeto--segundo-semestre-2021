@@ -42,34 +42,34 @@ export class CronoComponent implements OnInit {
         ELEMENT_DATA[i].horario="8H ás 10H"
       } 
       if(i==0 && lista[i].resposta==false && lista2[i].resposta==true){
-        ELEMENT_DATA[i].horario="12H ás 14H"
+        ELEMENT_DATA[i].horario="14H ás 16H"
       }
   
       if(i==1 && lista[i].resposta==true && lista2[i].resposta==true){
         ELEMENT_DATA[i].horario="8H ás 10H"
       } 
       if(i==1 && lista[i].resposta==false && lista2[i].resposta==true){
-        ELEMENT_DATA[i].horario="12H ás 14H"
+        ELEMENT_DATA[i].horario="14H ás 16H"
       }
   
       if(i==2 && lista[i].resposta==true && lista2[i].resposta==true){
         ELEMENT_DATA[i].horario="8H ás 10H"
       } 
       if(i==2 && lista[i].resposta==false && lista2[i].resposta==true){
-        ELEMENT_DATA[i].horario="12H ás 14H"
+        ELEMENT_DATA[i].horario="14H ás 16H"
       }
   
       if(i==3 && lista[i].resposta==true && lista2[i].resposta==true){
         ELEMENT_DATA[i].horario="8H ás 10H"
       } 
       if(i==3 && lista[i].resposta==false && lista2[i].resposta==true){
-        ELEMENT_DATA[i].horario="12H ás 14H"
+        ELEMENT_DATA[i].horario="14H ás 16H"
       }
       if(i==4 && lista[i].resposta==true && lista2[i].resposta==true){
         ELEMENT_DATA[i].horario="8H ás 10H"
       } 
       if(i==4 && lista[i].resposta==false && lista2[i].resposta==true){
-        ELEMENT_DATA[i].horario="12H ás 14H"
+        ELEMENT_DATA[i].horario="14H ás 16H"
       }
 
       console.log(ELEMENT_DATA[i])
@@ -79,31 +79,31 @@ export class CronoComponent implements OnInit {
     for (let i=0;i<5;i++){
      
       if(i==0 && lista2[i].resposta==true){
-        ELEMENT_DATA[i].atividade="Curso de ansiedade social"
+        ELEMENT_DATA[i].atividade="Grupo para ansiedade social"
       }
       if(i==0 && lista2[i].resposta==false ){
         ELEMENT_DATA[i].atividade=""
       }
       if(i==1 && lista2[i].resposta==true){
-        ELEMENT_DATA[i].atividade="Curso contra depressão"
+        ELEMENT_DATA[i].atividade="Grupo contra depressão"
       }
       if(i==0 && lista2[i].resposta==false ){
         ELEMENT_DATA[i].atividade=""
       }
       if(i==2 && lista2[i].resposta==true){
-        ELEMENT_DATA[i].atividade="Curso de ansiedade"
+        ELEMENT_DATA[i].atividade="Grupo para ansiedade"
       }
       if(i==0 && lista2[i].resposta==false ){
         ELEMENT_DATA[i].atividade=""
       }
       if(i==3 && lista2[i].resposta==true){
-        ELEMENT_DATA[i].atividade="Curso TDAH"
+        ELEMENT_DATA[i].atividade="Grupo para Síndrome de Borderline"
       }
       if(i==0 && lista2[i].resposta==false ){
         ELEMENT_DATA[i].atividade=""
       }
       if(i==4 && lista2[i].resposta==true){
-        ELEMENT_DATA[i].atividade="Curso contra infelicidade"
+        ELEMENT_DATA[i].atividade="Grupo para todos"
       }
       if(i==0 && lista2[i].resposta==false ){
         ELEMENT_DATA[i].atividade=""
